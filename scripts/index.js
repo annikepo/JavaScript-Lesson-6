@@ -110,3 +110,18 @@ function addBook() {
   alert(`"${trimmedTitle}" has been added to your library!`);
 
 }
+
+function listBooks() {
+
+  if (library.length === 0) {
+
+    console.log("Your library is currently empty.");
+
+    return;
+
+  }
+
+ 
+
+  console.log("--- Your Library ---");
+
