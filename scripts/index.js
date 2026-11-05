@@ -125,3 +125,28 @@ function listBooks() {
 
   console.log("--- Your Library ---");
 
+console.log("--- Your Library ---");
+
+  // Use forEach() to iterate through every book in the array
+
+  library.forEach(book => {
+
+    const status = book.isRead ? "Read" : "Unread";
+
+    console.log(`${book.title} by ${book.author} [${status}]`);
+
+  });
+
+  alert("Check your browser console to see the list of books!");
+
+}
+
+
+
+function markAsRead(title) {
+
+  if (title === null || !title.trim()) {
+
+    return;
+
+  }
