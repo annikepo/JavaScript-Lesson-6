@@ -125,8 +125,6 @@ function listBooks() {
 
   console.log("--- Your Library ---");
 
-console.log("--- Your Library ---");
-
   // Use forEach() to iterate through every book in the array
 
   library.forEach(book => {
@@ -217,4 +215,3 @@ function removeBook(title) {
     alert("Book not found.");
   }
 }
-
