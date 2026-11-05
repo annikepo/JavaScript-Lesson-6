@@ -54,3 +54,40 @@ function startApp() {
   }
 }
 
+// 2. Implement the required functions
+
+function addBook() {
+
+  const title = prompt("Enter the book's title:");
+
+  if (title === null) {
+
+    return;
+
+  }
+
+
+
+  const author = prompt("Enter the book's author:");
+
+  if (author === null) {
+
+    return;
+
+  }
+
+
+
+  const trimmedTitle = title.trim();
+
+  const trimmedAuthor = author.trim();
+
+  if (!trimmedTitle || !trimmedAuthor) {
+
+    alert("Book title and author cannot be empty.");
+
+    return;
+
+  }
+
+ 
