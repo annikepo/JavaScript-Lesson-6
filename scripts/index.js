@@ -200,5 +200,21 @@ function listUnreadBooks() {
 }
 
 
+function removeBook(title) {
+  if (title === null || !title.trim()) {
+    return;
+  }
 
+  // findIndex returns the position (e.g., 0, 1, 2). If not found, it returns -1.
+  const normalizedTitle = title.trim().toLowerCase();
+  const index = library.findIndex(b => b.title.toLowerCase() === normalizedTitle);
+  
+  if (index !== -1) {
+    // splice removes items starting at the given index. The '1' means remove one item.
+    const [book] = library.splice(index, 1);
+    alert(`"${book.title}" has been removed.`);
+  } else {
+    alert("Book not found.");
+  }
+}
 
