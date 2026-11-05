@@ -103,3 +103,10 @@ function addBook() {
 
   };
 
+  // Use push() to add the new object to the end of the array
+
+  library.push(book);
+
+  alert(`"${trimmedTitle}" has been added to your library!`);
+
+}
