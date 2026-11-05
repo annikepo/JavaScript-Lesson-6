@@ -1,0 +1,11 @@
+/* index.css - Custom Styles */
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
