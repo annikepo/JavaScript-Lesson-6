@@ -91,3 +91,15 @@ function addBook() {
   }
 
  
+  // Create the book object
+
+  const book = {
+
+    title: trimmedTitle,
+
+    author: trimmedAuthor,
+
+    isRead: false // Books are unread by default when added
+
+  };
+
