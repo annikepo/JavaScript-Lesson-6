@@ -150,3 +150,55 @@ function markAsRead(title) {
     return;
 
   }
+
+   // Use find() to locate the first book object that matches the title
+
+  const normalizedTitle = title.trim().toLowerCase();
+
+  const book = library.find(b => b.title.toLowerCase() === normalizedTitle);
+
+ 
+
+  if (book) {
+
+    book.isRead = true; // Update the object's property
+
+    alert(`"${book.title}" has been marked as read!`);
+
+  } else {
+
+    alert("Book not found. Please check the spelling.");
+
+  }
+
+}
+
+
+
+function listUnreadBooks() {
+
+  // Filter creates a new array of only the books where isRead is false
+
+  const unreadBooks = library.filter(book => book.isRead === false);
+
+ 
+
+  if (unreadBooks.length === 0) {
+
+    console.log("You have no unread books!");
+
+    return;
+
+  }
+
+ 
+
+  console.log("--- Unread Books ---");
+
+  unreadBooks.forEach(book => console.log(`${book.title} by ${book.author}`));
+
+}
+
+
+
+
